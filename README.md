@@ -1,11 +1,13 @@
 # Mini-Workshop-Deploying-Web-in-AWS
 
+A simple example of how you can deploy a dinamic website in AWS
+
 ## EC2 (Elastic Compute Cloud)
 - Open EC2 --> Launch Instance
 - AMI: Amazon Linux
 - Type: t2.micro
 - KeyPair: Create New or use existing keypair (.pem)
-- Security Group: create new abd allow in bound rules for port SSH, HTTP, HTTPS, MYSQL, port:3000
+- Security Group: create new and allow inbound rules for SSH, HTTP, HTTPS, MYSQL, port:3000
 
 ## SSH to the Instance IP Public (Public IPv4)
 ```
