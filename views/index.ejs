@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Users</title></head>
+<body>
+  <h1>Daftar User</h1>
+  <a href="/add">+ Tambah User</a>
+  <ul>
+    <% users.forEach(user => { %>
+      <li>
+        <%= user.name %> - <%= user.email %>
+        [<a href="/edit/<%= user.id %>">Edit</a>]
+        [<a href="/delete/<%= user.id %>">Hapus</a>]
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
